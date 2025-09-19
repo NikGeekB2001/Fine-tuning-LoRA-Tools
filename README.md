@@ -1,6 +1,6 @@
-# Fine-tuning RuBERT Large SQuAD 2 с LoRA для NER
+# Fine-tuning RuBERT Large SQuAD 2 с LoRA 
 
-Этот проект демонстрирует обучение модели Den4ikAI/rubert_large_squad_2 с использованием LoRA (Low-Rank Adaptation) для задачи Named Entity Recognition (NER) на медицинских данных. Обучение проводится на GPU для повышения производительности.
+Этот проект демонстрирует обучение модели Den4ikAI/rubert_large_squad_2 с использованием LoRA (Low-Rank Adaptation) для задачи на медицинских данных. Обучение проводится на GPU для повышения производительности.
 
 ## Структура проекта
 
@@ -68,21 +68,6 @@
 - `per_device_train_batch_size`: Определяет количество примеров, обрабатываемых за один раз на каждом GPU. Чем больше батч, тем быстрее обучение, но требуется больше VRAM.
 - LoRA: Эффективно обучает только небольшую часть параметров, что позволяет обучать большие модели даже на GPU с ограниченной VRAM.
 
-## Интеграция LoRA-адаптера в ваш проект
 
-После обучения LoRA-адаптер будет сохранен в папке `./models/lora_adapter`. Чтобы использовать его в вашем проекте, загрузите базовую модель и примените LoRA-адаптер:
 
-```python
-from transformers import AutoModelForTokenClassification, AutoTokenizer
-from peft import PeftModel
 
-model_name = "Den4ikAI/rubert_large_squad_2"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
-model = AutoModelForTokenClassification.from_pretrained(model_name)
-
-# Загружаем LoRA-адаптер
-model = PeftModel.from_pretrained(model, "./models/lora_adapter")
-```
-ТЕестирование
-pip install matplotlib
-pip install seaborn\
