@@ -17,4 +17,11 @@ best
 dataset_labels
 
 # Presentation files
-prezentation
+prezentation.md
+
+# Удалите файлы локально
+dataset_labels
+распределение_истинных_меток.png
+best
+analysis_utils.py
+
