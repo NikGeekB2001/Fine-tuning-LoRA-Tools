@@ -7,3 +7,17 @@ python-dotenv>=1.0.0
 seqeval>=1.2.2
 
 # Для установки PyTorch с CUDA 11.8: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+langchain>=0.1.0,<0.2.0
+langchain-community>=0.0.20,<0.1.0
+langchain-core>=0.1.0,<0.2.0
+protobuf
+tiktoken
+sentencepiece
+langchain-huggingface
+streamlit
+
+bitsandbytes
+
+# Новые зависимости для медицинского агента
+faiss-cpu
+sentence-transformers

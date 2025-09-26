@@ -18,10 +18,15 @@ dataset_labels
 
 # Presentation files
 prezentation.md
+prezentation for dz.md
 
-# Удалите файлы локально
-dataset_labels
+# Qodo directory
+.qodo/
+
+# Offload directory with large model files
+offload/
+
+# Local files
 распределение_истинных_меток.png
 best
 analysis_utils.py
-
